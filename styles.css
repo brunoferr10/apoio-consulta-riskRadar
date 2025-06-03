@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  background-color: #4da6ff;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-img {
+  height: 60px;
+  margin-left: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  margin-right: 30px;
+}
+
+.nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN */
+.main-title {
+  margin-top: 40px;
+}
+
+.main-title h2 {
+  font-size: 2.5rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.main-title p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* BENEFITS */
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.benefit-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.benefit-box img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.benefit-box h3 {
+  font-size: 1.2rem;
+  color: #0066cc;
+}
+
+.benefit-box p {
+  font-size: 0.95rem;
+}
+
+/* CAIXA INFO DOM */
+#btnEmpresa {
+  background-color: #007acc;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 30px;
+}
+
+#btnEmpresa:hover {
+  background-color: #005c99;
+}
+
+.caixa-info {
+  background-color: #e6f2ff;
+  border: 2px solid #99ccff;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* FORMULÁRIO DE CONTATO */
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005c99;
+}
+
+/* INTEGRANTES */
+.integrantes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.integrante {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.integrante img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.integrante h3 {
+  margin: 10px 0 5px;
+}
+
+.integrante a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.integrante a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-list details {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-list summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #005c99;
+  cursor: pointer;
+}
+
+.faq-list p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* PROJETO */
+.projeto-descricao {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-descricao p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.projeto-descricao ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.projeto-descricao ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #003d66;
+  color: #e0e0e0;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.95em;
+}
