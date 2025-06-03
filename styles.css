@@ -265,3 +265,16 @@ body {
   margin-top: 40px;
   font-size: 0.95em;
 }
+.erro {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+  display: block;
+}
+
+.sucesso {
+  color: green;
+  font-size: 1em;
+  margin-top: 20px;
+  font-weight: bold;
+}
