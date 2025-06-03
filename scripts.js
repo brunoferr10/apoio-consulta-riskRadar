@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // BOTÃO SOBRE A EMPRESA
   const botao = document.getElementById('btnEmpresa');
   const container = document.getElementById('infoEmpresa');
   let visivel = false;
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // FORMULÁRIO DE CONTATO
   const form = document.querySelector('.contact-form');
   if (form) {
     const successMsg = document.createElement('p');

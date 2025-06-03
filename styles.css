@@ -6,7 +6,6 @@ body {
   text-align: center;
 }
 
-/* HEADER */
 .header {
   background-color: #4da6ff;
   color: white;
@@ -40,7 +39,6 @@ body {
   text-decoration: underline;
 }
 
-/* MAIN */
 .main-title {
   margin-top: 40px;
 }
@@ -56,7 +54,6 @@ body {
   color: #444;
 }
 
-/* BENEFITS */
 .benefits {
   display: flex;
   justify-content: space-around;
@@ -89,7 +86,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* CAIXA INFO DOM */
 #btnEmpresa {
   background-color: #007acc;
   color: #fff;
@@ -118,7 +114,6 @@ body {
   text-align: left;
 }
 
-/* FORMULÁRIO DE CONTATO */
 .contact-form {
   max-width: 500px;
   margin: 30px auto;
@@ -161,7 +156,6 @@ body {
   background-color: #005c99;
 }
 
-/* INTEGRANTES */
 .integrantes-container {
   display: flex;
   flex-wrap: wrap;
@@ -202,7 +196,6 @@ body {
   text-decoration: underline;
 }
 
-/* FAQ */
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
@@ -230,7 +223,6 @@ body {
   color: #333;
 }
 
-/* PROJETO */
 .projeto-descricao {
   max-width: 800px;
   margin: 0 auto;
@@ -257,7 +249,6 @@ body {
   line-height: 1.5;
 }
 
-/* FOOTER */
 .footer {
   background-color: #003d66;
   color: #e0e0e0;
