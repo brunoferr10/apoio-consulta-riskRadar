@@ -28,6 +28,7 @@ Com essa iniciativa, a RiskRadar busca ser uma ponte entre a emergência emocion
 └── gabriel.png
 
 Tecnologias Utilizadas
+
 HTML	- Estruturação do conteúdo e páginas
 CSS -	Estilização e responsividade)
 JavaScript -	Interatividade
