@@ -269,3 +269,109 @@ body {
   margin-top: 20px;
   font-weight: bold;
 }
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    padding: 15px 20px;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+
+  .benefits {
+    justify-content: center;
+    padding: 30px 10px;
+  }
+
+  .benefit-box {
+    max-width: 300px;
+    flex: 1 1 45%;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  .integrantes-container {
+    gap: 20px;
+  }
+
+  .faq-list,
+  .projeto-descricao {
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    padding: 20px 40px;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+    margin: 0 16px;
+  }
+
+  .benefits {
+    gap: 40px;
+    padding: 60px 80px;
+  }
+
+  .benefit-box {
+    max-width: 280px;
+    flex: 1 1 30%;
+  }
+
+  .main-title h2 {
+    font-size: 3rem;
+  }
+
+  .contact-form {
+    max-width: 700px;
+    padding: 40px;
+  }
+
+  .faq-list,
+  .projeto-descricao {
+    max-width: 900px;
+    padding: 40px;
+  }
+
+  .integrantes-container {
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .integrante {
+    width: 250px;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 204, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 123, 204, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 204, 0.4);
+  }
+}
+
+#btnEmpresa {
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
