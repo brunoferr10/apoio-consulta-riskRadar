@@ -7,6 +7,18 @@ body {
   background-repeat: no-repeat;
   color: #333;
   text-align: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .header {
@@ -48,14 +60,15 @@ body {
 
 .main-title h2 {
   font-size: 2.5rem;
-  color: #007acc;
+  color: #050505;
   margin-bottom: 10px;
 }
 
 .main-title p {
   font-size: 1.2rem;
-  color: #444;
+  color: #050505;
 }
+
 
 .benefits {
   display: flex;
@@ -89,6 +102,7 @@ body {
   font-size: 0.95rem;
 }
 
+
 #btnEmpresa {
   background-color: #007acc;
   color: #fff;
@@ -99,11 +113,14 @@ body {
   cursor: pointer;
   transition: background 0.3s;
   margin-top: 30px;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #btnEmpresa:hover {
   background-color: #005c99;
 }
+
 
 .caixa-info {
   background-color: #e6f2ff;
@@ -116,6 +133,7 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: left;
 }
+
 
 .contact-form {
   max-width: 500px;
@@ -159,6 +177,7 @@ body {
   background-color: #005c99;
 }
 
+
 .integrantes-container {
   display: flex;
   flex-wrap: wrap;
@@ -199,6 +218,7 @@ body {
   text-decoration: underline;
 }
 
+
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
@@ -226,6 +246,7 @@ body {
   color: #333;
 }
 
+
 .projeto-descricao {
   max-width: 800px;
   margin: 0 auto;
@@ -252,6 +273,7 @@ body {
   line-height: 1.5;
 }
 
+
 .footer {
   background-color: #003d66;
   color: #e0e0e0;
@@ -259,6 +281,8 @@ body {
   margin-top: 40px;
   font-size: 0.95em;
 }
+
+
 .erro {
   color: red;
   font-size: 0.9em;
@@ -273,7 +297,36 @@ body {
   font-weight: bold;
 }
 
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 204, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 123, 204, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 123, 204, 0.4);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
   .header {
     flex-direction: row;
     padding: 15px 20px;
@@ -308,6 +361,7 @@ body {
     padding: 25px;
   }
 }
+
 
 @media screen and (min-width: 1025px) {
   .header {
@@ -357,24 +411,4 @@ body {
   .footer {
     font-size: 1rem;
   }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 123, 204, 0.4);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 12px rgba(0, 123, 204, 0.6);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 123, 204, 0.4);
-  }
-}
-
-#btnEmpresa {
-  animation: pulse 2s infinite;
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
