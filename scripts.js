@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
           const p = document.createElement('p');
           p.textContent = texto;
           container.appendChild(p);
+          const yOffset = -100; // valor negativo para subir um pouco
+            const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({ top: y, behavior: 'smooth' });
         });
       }
     });
